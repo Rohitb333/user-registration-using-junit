@@ -12,6 +12,6 @@ public class RegexUserRegistration {
 
         UserInfo userInfo = new UserInfo();
         userInfo.userFirstName("Rohit");
-        userInfo.userEmailId("rohitb333@gmail.com");
+
     }
 }
