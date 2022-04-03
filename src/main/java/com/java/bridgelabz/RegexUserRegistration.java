@@ -12,6 +12,7 @@ public class RegexUserRegistration {
 
         UserInfo userInfo = new UserInfo();
         userInfo.userFirstName("Rohit");
+        userInfo.userLastName("Bansod");
 
     }
 }

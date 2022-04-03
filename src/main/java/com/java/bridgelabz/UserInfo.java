@@ -26,6 +26,20 @@ public class UserInfo {
         }
             return result;
     }
-
+    /*
+            Added last name method to check last name
+        */
+    public boolean userLastName(String lastName)
+    {
+        boolean result = Pattern.matches("[A-Z]{1}[a-z]{2,}",lastName);
+        if(result)
+        {
+            System.out.println("Correct");
+        }
+        else {
+            System.out.println("Please enter valid last name : ");
+        }
+        return result;
+    }
 
 }
