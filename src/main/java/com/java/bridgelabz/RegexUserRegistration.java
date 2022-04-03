@@ -13,6 +13,8 @@ public class RegexUserRegistration {
         UserInfo userInfo = new UserInfo();
         userInfo.userFirstName("Rohit");
         userInfo.userLastName("Bansod");
+        userInfo.userEmailId("rohitb333@gmail.com");
+        userInfo.userPhoneNumber("8329522845");
 
     }
 }
