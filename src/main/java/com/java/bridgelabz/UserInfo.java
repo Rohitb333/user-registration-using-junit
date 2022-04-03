@@ -41,5 +41,34 @@ public class UserInfo {
         }
         return result;
     }
+    /*
+    Added email id method to check email id
+  */
+    public boolean userEmailId(String emailId)
+    {
+        boolean result = Pattern.matches("[a-z A-Z 0-9]+[@][a-z A-Z 0-9]+[.][a-z]{2,3}$",emailId);
+        if (result)
+        {
+            System.out.println("Correct");
+        }
+        else {
+            System.out.println("Please enter correct email id : " );
+        }
+        return result;
+    }
+    /*
+      Added phone number method to check phone number
+  */
+    public boolean userPhoneNumber(String phoneNumber)
+    {
+        boolean result = Pattern.matches("[6-9]{1}[0-9]{9}",phoneNumber);
+        if (result) {
+            System.out.println("Correct");
+        }
+        else {
+            System.out.println("Please enter correct phone number");
+        }
+        return result;
+    }
 
 }
