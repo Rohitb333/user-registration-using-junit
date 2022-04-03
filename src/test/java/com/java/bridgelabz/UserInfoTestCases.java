@@ -26,7 +26,7 @@ public class UserInfoTestCases {
 
     @Test
     public void  whenLastName_ShouldProper_ShouldReturnFalse() {
-        boolean result = userInfo.userLastName("bansod");
+        boolean result = userInfo.userLastName("Bansod");
         Assert.assertFalse(result);
     }
 
