@@ -52,5 +52,15 @@ public class UserInfoTestCases {
         boolean result = userInfo.userPhoneNumber("8329522@12");
         Assert.assertFalse(result);
     }
+    @Test
+    public void whenPassWord_ShouldProper_ShouldReturnTrue() {
+        boolean result = userInfo.userPassword("Pass@123");
+        Assert.assertTrue(result);
+    }
 
+    @Test
+    public void whenPassWord_ShouldProper_ShouldReturnFalse() {
+        boolean result = userInfo.userPassword("Pass123");
+        Assert.assertFalse(result);
+    }
 }

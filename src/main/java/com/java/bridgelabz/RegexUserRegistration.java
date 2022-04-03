@@ -15,6 +15,8 @@ public class RegexUserRegistration {
         userInfo.userLastName("Bansod");
         userInfo.userEmailId("rohitb333@gmail.com");
         userInfo.userPhoneNumber("8329522845");
+        userInfo.userPassword("Pass@123");
+
 
     }
 }

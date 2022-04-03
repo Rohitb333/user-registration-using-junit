@@ -24,11 +24,11 @@ public class UserInfo {
         else{
             System.out.println("Please enter valid first name : ");
         }
-            return result;
+        return result;
     }
     /*
-            Added last name method to check last name
-        */
+        Added last name method to check last name
+    */
     public boolean userLastName(String lastName)
     {
         boolean result = Pattern.matches("[A-Z]{1}[a-z]{2,}",lastName);
@@ -42,8 +42,8 @@ public class UserInfo {
         return result;
     }
     /*
-    Added email id method to check email id
-  */
+     Added email id method to check email id
+   */
     public boolean userEmailId(String emailId)
     {
         boolean result = Pattern.matches("[a-z A-Z 0-9]+[@][a-z A-Z 0-9]+[.][a-z]{2,3}$",emailId);
@@ -57,8 +57,8 @@ public class UserInfo {
         return result;
     }
     /*
-      Added phone number method to check phone number
-  */
+       Added phone number method to check phone number
+   */
     public boolean userPhoneNumber(String phoneNumber)
     {
         boolean result = Pattern.matches("[6-9]{1}[0-9]{9}",phoneNumber);
@@ -70,5 +70,18 @@ public class UserInfo {
         }
         return result;
     }
+    /*
+    Added Password Method To Check Password Method
+     */
+    public boolean userPassword(String password){
+        boolean result = Pattern.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$",password);
 
+        if (result) {
+            System.out.println("Correct");
+        }
+        else {
+            System.out.println("Please enter correct Password");
+        }
+        return result;
+    }
 }
